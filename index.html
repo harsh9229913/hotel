@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — HotelBok</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">HB</div>
+        <div>
+          <div style="font-weight:800">HotelBok</div>
+          <div style="font-size:13px;color:var(--muted)">Smart, simple bookings</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Booking</a>
+        <a href="login.html">Sign in</a>
+        <a href="register.html" class="btn">Register</a>
+      </nav>
+    </header>
+
+    
+<div class="card hero">
+  <div style="flex:1">
+    <h1>Find calm stays. Book in seconds.</h1>
+    <p class="small">Comfortable rooms, transparent pricing, and easy online payment.</p>
+
+    <form class="search" action="rooms.html" method="get">
+      <input class="input" name="q" placeholder="Where are you going? e.g., Goa" />
+      <input class="input" name="dates" placeholder="Check-in — Check-out" />
+      <button class="btn" type="submit">Search</button>
+    </form>
+  </div>
+  <div style="width:360px">
+    <div class="card">
+      <h3 style="margin-top:0">Popular this week</h3>
+      <div style="display:flex;gap:12px;align-items:center">
+        <img src="https://picsum.photos/seed/629/800/500" style="width:80px;height:60px;border-radius:8px;object-fit:cover" />
+        <div>
+          <div style="font-weight:700">Coastal Escape</div>
+          <div class="small">From ₹2,499/night</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:20px" class="grid">
+  <div>
+    <div class="card">
+      <h2 style="margin-top:0">Featured rooms</h2>
+      <div class="room-list" style="margin-top:12px">
+        <div class="room">
+          <img src="https://picsum.photos/seed/68/800/500" />
+          <div class="room-info">
+            <div class="room-title">Deluxe Double</div>
+            <div class="room-desc">City view • 1 king bed • Free Wi-Fi</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div class="price">₹3,499</div>
+              <a href="rooms.html" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="room">
+          <img src="https://picsum.photos/seed/424/800/500" />
+          <div class="room-info">
+            <div class="room-title">Suite with Balcony</div>
+            <div class="room-desc">Balcony • Sea view • Breakfast included</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div class="price">₹6,199</div>
+              <a href="rooms.html" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3 style="margin-top:0">Why book with us?</h3>
+      <ul style="margin:8px 0 0 18px;color:var(--muted)">
+        <li>Transparent pricing</li>
+        <li>Safe online payments</li>
+        <li>24/7 customer support</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside>
+    <div class="card">
+      <h3 style="margin-top:0">Need help?</h3>
+      <p class="small">Chat with our support team for group bookings or special requests.</p>
+      <div style="margin-top:12px">
+        <a href="contact.html" class="btn" style="display:inline-block">Contact</a>
+      </div>
+    </div>
+  </aside>
+</div>
+
+
+    <footer class="footer card" style="margin-top:24px">
+      © 2025 HotelBok — clean front-end demo. Images from Unsplash.
+    </footer>
+  </div>
+</body>
+</html>

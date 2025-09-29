@@ -1,0 +1,96 @@
+
+/* styles.css - Single external stylesheet for all pages */
+:root{
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --accent-2:#06b6d4;
+  --radius:12px;
+  --shadow: 0 6px 18px rgba(22,28,36,0.08);
+  --glass: rgba(255,255,255,0.6);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg, var(--bg), #eef2ff 120%);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:32px;
+}
+
+/* layout */
+.container{max-width:1100px;margin:0 auto}
+.header{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;margin-bottom:28px;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{
+  width:56px;height:56px;border-radius:10px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;
+  box-shadow:var(--shadow);
+  font-size:20px;
+}
+.nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+.btn{
+  display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;
+  background:var(--accent);color:#fff;font-weight:600;box-shadow:var(--shadow)
+}
+.grid{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
+
+/* cards & forms */
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+.hero{
+  display:flex;gap:20px;align-items:center;padding:28px;border-radius:16px;
+  background: linear-gradient(90deg, rgba(37,99,235,0.08), rgba(6,182,212,0.06));
+}
+.hero h1{margin:0;font-size:28px}
+.search{display:flex;gap:10px;margin-top:14px}
+.input,select,textarea{
+  width:100%;padding:12px;border-radius:10px;border:1px solid #e6e9ef;background:transparent;
+  outline:none;font-size:14px;color:inherit;
+}
+.input:focus{box-shadow:0 4px 12px rgba(37,99,235,0.08);border-color:var(--accent)}
+.form-row{display:flex;gap:12px}
+.form-row .input{flex:1}
+
+/* room list */
+.room-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.room{
+  display:flex;gap:14px;align-items:stretch;
+}
+.room img{width:160px;height:120px;border-radius:10px;object-fit:cover}
+.room-info{flex:1}
+.room-title{font-weight:700;margin:0}
+.room-desc{color:var(--muted);font-size:13px;margin:6px 0}
+.price{font-weight:800;color:var(--accent);font-size:18px}
+
+/* booking detail */
+.meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+
+/* forms specifics */
+label{display:block;font-size:13px;margin-bottom:6px;color:#374151;font-weight:600}
+.form-group{margin-bottom:12px}
+.small{font-size:13px;color:var(--muted)}
+.center{display:flex;justify-content:center;align-items:center}
+
+/* tables */
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;text-align:left;border-bottom:1px solid #f1f3f6}
+.table th{font-size:13px;color:var(--muted)}
+
+/* footer */
+.footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+
+/* responsive */
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr;gap:18px}
+  .room-list{grid-template-columns:1fr}
+  .logo{width:46px;height:46px}
+}

@@ -1,0 +1,1 @@
+This folder contains the frontend files for the HotelBok demo. Open index.html in a browser.

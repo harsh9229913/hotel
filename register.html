@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — HotelBok</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">HB</div>
+        <div>
+          <div style="font-weight:800">HotelBok</div>
+          <div style="font-size:13px;color:var(--muted)">Smart, simple bookings</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Booking</a>
+        <a href="login.html">Sign in</a>
+        <a href="register.html" class="btn">Register</a>
+      </nav>
+    </header>
+
+    
+<div class="card" style="max-width:720px;margin:0 auto">
+  <h2 style="margin-top:0">Create account</h2>
+  <p class="small">Quick — we only need a few details.</p>
+
+  <form action="index.html" method="post" style="margin-top:12px">
+    <div class="form-row">
+      <div style="flex:1">
+        <label>Full name</label>
+        <input class="input" name="name" required placeholder="Your full name" />
+      </div>
+      <div style="width:180px">
+        <label>Phone</label>
+        <input class="input" name="phone" placeholder="+91 98765 43210" />
+      </div>
+    </div>
+
+    <div class="form-row" style="margin-top:10px">
+      <div style="flex:1">
+        <label>Email</label>
+        <input class="input" name="email" type="email" required placeholder="you@example.com" />
+      </div>
+      <div style="width:180px">
+        <label>Gender</label>
+        <select class="input" name="gender">
+          <option>Prefer not to say</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+    </div>
+
+    <div style="margin-top:10px" class="form-row">
+      <div style="flex:1">
+        <label>Password</label>
+        <input class="input" name="password" type="password" required />
+      </div>
+      <div style="width:160px">
+        <label>Age</label>
+        <input class="input" name="age" type="number" min="12" />
+      </div>
+    </div>
+
+    <div style="margin-top:12px">
+      <button class="btn" type="submit">Create account</button>
+    </div>
+  </form>
+</div>
+
+
+    <footer class="footer card" style="margin-top:24px">
+      © 2025 HotelBok — clean front-end demo. Images from Unsplash.
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Booking details — HotelBok</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">HB</div>
+        <div>
+          <div style="font-weight:800">HotelBok</div>
+          <div style="font-size:13px;color:var(--muted)">Smart, simple bookings</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Booking</a>
+        <a href="login.html">Sign in</a>
+        <a href="register.html" class="btn">Register</a>
+      </nav>
+    </header>
+
+    
+<div class="card" style="max-width:900px;margin:0 auto">
+  <h2 style="margin-top:0">Booking details</h2>
+  <p class="small">Review your reservation before payment.</p>
+
+  <div style="display:flex;gap:18px;margin-top:12px">
+    <div style="flex:1">
+      <div class="card">
+        <h3 style="margin-top:0">Guest</h3>
+        <p><strong id="gname">Guest Name</strong></p>
+        <p class="small">Email: guest@example.com</p>
+        <p class="small">Phone: +91 98765 43210</p>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3 style="margin-top:0">Stay</h3>
+        <table class="table">
+          <tr><th>Room</th><td id="rroom">Standard Room</td></tr>
+          <tr><th>Check-in</th><td id="rci">2025-10-01</td></tr>
+          <tr><th>Check-out</th><td id="rco">2025-10-03</td></tr>
+          <tr><th>Nights</th><td id="rn">2</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <aside style="width:320px">
+      <div class="card">
+        <h3 style="margin-top:0">Price summary</h3>
+        <table class="table">
+          <tr><th>Room (per night)</th><td>₹2,199</td></tr>
+          <tr><th>Service fee</th><td>₹199</td></tr>
+          <tr><th>Taxes</th><td>₹250</td></tr>
+          <tr><th>Total</th><td style="font-weight:800">₹4,847</td></tr>
+        </table>
+        <div style="margin-top:12px">
+          <a class="btn" href="payment.html">Proceed to payment</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+
+    <footer class="footer card" style="margin-top:24px">
+      © 2025 HotelBok — clean front-end demo. Images from Unsplash.
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rooms — HotelBok</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">HB</div>
+        <div>
+          <div style="font-weight:800">HotelBok</div>
+          <div style="font-size:13px;color:var(--muted)">Smart, simple bookings</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Booking</a>
+        <a href="login.html">Sign in</a>
+        <a href="register.html" class="btn">Register</a>
+      </nav>
+    </header>
+
+    
+<div class="grid">
+  <div>
+    <div class="card">
+      <h2 style="margin-top:0">Rooms</h2>
+      <p class="small">Choose a room and fill the booking form on the right.</p>
+
+      <div class="room-list" style="margin-top:12px">
+        <div class="room card" style="padding:12px">
+          <img src="https://picsum.photos/seed/298/800/500" />
+          <div class="room-info">
+            <div class="room-title">Standard Room</div>
+            <div class="room-desc">1 queen bed • City view • Free Wi-Fi</div>
+            <div class="meta">
+              <div class="small">Beds: 1</div>
+              <div class="small">Guests: 2</div>
+              <div class="small">Free cancellation</div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+              <div class="price">₹2,199/night</div>
+              <a class="btn" href="#book">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="room card" style="padding:12px">
+          <img src="https://picsum.photos/seed/737/800/500" />
+          <div class="room-info">
+            <div class="room-title">Executive Suite</div>
+            <div class="room-desc">1 king bed • Sea-view • Breakfast</div>
+            <div class="meta">
+              <div class="small">Beds: 1</div>
+              <div class="small">Guests: 3</div>
+              <div class="small">Breakfast included</div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+              <div class="price">₹5,499/night</div>
+              <a class="btn" href="#book">Book</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3 style="margin-top:0">Need something special?</h3>
+      <p class="small">Request early check-in or extra bed during booking.</p>
+    </div>
+  </div>
+
+  <aside>
+    <div id="book" class="card">
+      <h3 style="margin-top:0">Booking form</h3>
+      <p class="small">Fill details to continue to booking summary.</p>
+
+      <form action="booking.html" method="get">
+        <div class="form-group">
+          <label>Your name</label>
+          <input class="input" name="guest_name" required placeholder="Guest full name" />
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label>Check-in</label>
+            <input class="input" name="checkin" type="date" required />
+          </div>
+          <div>
+            <label>Check-out</label>
+            <input class="input" name="checkout" type="date" required />
+          </div>
+        </div>
+
+        <div class="form-row" style="margin-top:10px">
+          <div style="flex:1">
+            <label>Room type</label>
+            <select class="input" name="room_type">
+              <option>Standard Room — ₹2,199/night</option>
+              <option>Executive Suite — ₹5,499/night</option>
+            </select>
+          </div>
+          <div style="width:120px">
+            <label>Guests</label>
+            <input class="input" name="guests" type="number" min="1" value="2" />
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <button class="btn" type="submit">Continue to booking</button>
+        </div>
+      </form>
+    </div>
+  </aside>
+</div>
+
+
+    <footer class="footer card" style="margin-top:24px">
+      © 2025 HotelBok — clean front-end demo. Images from Unsplash.
+    </footer>
+  </div>
+</body>
+</html>
